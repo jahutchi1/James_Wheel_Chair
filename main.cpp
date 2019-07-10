@@ -1,3 +1,4 @@
+
 /* mbed Microcontroller Library
  * Copyright (c) 2018 ARM Limited
  * SPDX-License-Identifier: Apache-2.0
@@ -7,6 +8,7 @@
 #include "stats_report.h"
 
 DigitalOut led1(LED1);
+DigitalOut led3(LED3);
 
 #define SLEEP_TIME                  500 // (msec)
 #define PRINT_AFTER_N_LOOPS         20
