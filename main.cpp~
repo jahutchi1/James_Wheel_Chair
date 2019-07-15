@@ -1,12 +1,15 @@
+
 /* mbed Microcontroller Library
  * Copyright (c) 2018 ARM Limited
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include "mbed.h"
+#include "mbed.h"   //James was here, he will be leaving soon.
 #include "stats_report.h"
 
 DigitalOut led1(LED1);
+DigitalOut led2(LED2);
+DigitalOut led3(LED3);
 
 #define SLEEP_TIME                  500 // (msec)
 #define PRINT_AFTER_N_LOOPS         20
@@ -20,7 +23,7 @@ int main()
     while (true) {
         // Blink LED and wait 0.5 seconds
         //led1 =!led1; //LED blinks when this in uncommented
-	led1 = 0; //led does not blink
+	led1 = 1; //led does not blink
         wait_ms(SLEEP_TIME);
 
         if ((0 == count) || (PRINT_AFTER_N_LOOPS == count)) {
