@@ -8,6 +8,7 @@
 #include "stats_report.h"
 
 DigitalOut led1(LED1);
+DigitalOut led2(LED2);
 DigitalOut led3(LED3);
 
 #define SLEEP_TIME                  500 // (msec)
